@@ -1,0 +1,99 @@
+.nav-bar {
+    position: absolute;
+    width: 100%;
+    height: 62px;
+    left: 0px;
+    top: 0px;
+
+    background: #1890FF;
+}
+
+.nav-titulo {   
+
+    position: absolute;
+    width: 248px;
+    height: 32px;
+    left: 41px;
+    top: 15px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.btn-search{
+  
+    position: absolute;
+    width: 120px;
+    top: 188px;
+    left: 94px;
+    height: 40px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    border:none;
+        
+    border-color: #fff;
+    align-items: center;
+    text-align: center;    
+
+    background: #1890FF;
+    border-radius: 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+ }
+
+
+.painel {
+    
+    position: absolute;
+   
+    width: 1251px;
+    height: 270px;
+    margin: 116px 99px 514px 90px;
+    
+    background: #E6F7FF;
+    border-radius: 16px;
+}
+
+.titulo {
+    position: absolute;
+    width: 502px;
+    height: 46px;
+    left: 94px;
+    top: 46px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 46px;
+
+    color: #262626;
+}
+
+.input {
+
+    width: 676px;
+    height: 40px;
+    margin: 124px 481px 106px 94px;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 4px;
+   
+}
+
+
