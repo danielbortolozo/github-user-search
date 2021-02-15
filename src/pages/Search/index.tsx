@@ -90,7 +90,8 @@ const Search = () => {
 
          {!isPainelPerfil ? <> </> : (
             <div className="painel-perfil">
-               {isLoading ? <>
+               {isLoading ?
+               <>
                   <div className="info-loaders"><InfoLaders /></div>
                   <div className="img-loaders"><ImagemLoader /></div>
                </> : (
