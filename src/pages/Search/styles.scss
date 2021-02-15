@@ -7,9 +7,7 @@
 
     background: #1890FF;
 }
-
 .nav-titulo {   
-
     position: absolute;
     width: 248px;
     height: 32px;
@@ -21,16 +19,36 @@
     font-weight: 500;
     font-size: 24px;
     line-height: 32px;
-    /* identical to box height, or 133% */
-
     display: flex;
     align-items: center;
-
     color: #FFFFFF;
 }
+.btn-perfil{
+    position: absolute;
+    width: 120px;
+    top: 320px;
+    left: 85px;
+    height: 40px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
 
+    border:none;
+        
+    border-color: #fff;
+    align-items: center;
+    text-align: center;    
+
+    background: #1890FF;
+    border-radius: 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+
+}
 .btn-search{
-  
     position: absolute;
     width: 120px;
     top: 188px;
@@ -54,12 +72,8 @@
     color: #FFFFFF;
     cursor: pointer;
  }
-
-
 .painel {
-    
-    position: absolute;
-   
+    position: absolute;  
     width: 1251px;
     height: 270px;
     margin: 116px 99px 514px 90px;
@@ -67,7 +81,6 @@
     background: #E6F7FF;
     border-radius: 16px;
 }
-
 .titulo {
     position: absolute;
     width: 502px;
@@ -83,9 +96,7 @@
 
     color: #262626;
 }
-
 .input {
-
     width: 676px;
     height: 40px;
     margin: 124px 481px 106px 94px;
@@ -93,7 +104,158 @@
     border: 1px solid #D9D9D9;
     box-sizing: border-box;
     border-radius: 4px;
-   
+}
+.painel-perfil {
+    position: absolute;
+    width: 1251px;
+    height: 387px;
+    margin: 450px 99px 514px 90px;
+ 
+    background: #F5F5F5;
+    border-radius: 8px; 
+}
+.img {
+    position: absolute;
+    width: 284px;
+    height: 280px;
+
+    margin: 23px 1033px 30px 84px;
+}
+.input-top {
+    display: flex;
+    padding: 10px 0px 0px 450px ;
+}
+.input-repositori {
+    position: absolute;
+    width: 163px;
+    height: 22px;
+    left: 450px;
+    top: 20px;
+
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.input-seguidores {
+    position: absolute;
+    width: 118px;
+    height: 22px;
+    left: 621px;
+    top: 20px;
+
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.input-seguindo {
+    position: absolute;
+    width: 105px;
+    height: 22px;
+    left: 750px;
+    top: 20px;
+
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.painel-interno {
+    position: absolute;
+    width: 780px;
+    height: 247px;
+    left: 450px;
+    top: 50px;
+    
+    background: #FFFFFF;
+    
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+.painel-interno-label {
+    position: absolute;
+    width: 534px;
+    height: 28px;
+    left: 14px;
+    top: 8px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+
+    display: flex;
+    align-items: center;
+
+    color: #1890FF;
+}
+.input-company {
+    position: absolute;
+    top: 55px;  
+    left: 15px;  
+    position: absolute; 
+    width: 650px;
+    height: 40px;
+    
+    background: #FFFFFF;
+
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.input-website {   
+    position: absolute;
+    top: 100px;  
+    left: 15px;  
+    position: absolute; 
+    width: 650px;
+    height: 40px;
+    
+    background: #FFFFFF;
+
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 4px;    
+}
+.input-localidade {
+    position: absolute;
+    top: 145px;  
+    left: 15px;  
+    width: 650px;
+    height: 40px;
+    
+    background: #FFFFFF;
+
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 4px;  
+}
+.input-desde {
+    position: absolute;
+    top: 190px;  
+    left: 15px;  
+    width: 650px;
+    height: 40px;
+    
+    background: #FFFFFF;
+
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 4px;  
 }
 
 
+.info-loaders {
+    position: absolute;
+    left: 360px;
+    top: 18px;
+}
+
+.img-loaders {
+    position: absolute;
+    left: 0px;
+    
+}
