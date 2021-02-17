@@ -6,6 +6,7 @@ import InfoLaders from './components/Loaders/InfoLoader';
 import ImagemLoader from './components/Loaders/ImagemLoader';
 import 'dayjs/locale/pt-br'
 import dayjs from 'dayjs';
+import { Link } from 'react-router-dom';
 
 type FormState = {
    usuario: string;
@@ -16,14 +17,13 @@ type FormEvent = React.ChangeEvent<HTMLInputElement>;
 const Search = () => {
 
    const [formData, setformData] = useState<FormState>({
-      usuario: '',
-
+      usuario: ''      
    });
 
    const [perfilUsuario, setPerfilUsuario] = useState<PerfilUsuario>();
    const [isLoading, setIsLoading] = useState(false);
    const [isPainelPerfil, setIsPainelPerfil] = useState(false);
-
+   
    const handleOnChange = (event: FormEvent) => {
       const name = event.target.name;
       const value = event.target.value;
@@ -62,11 +62,14 @@ const Search = () => {
    var website: string = 'WebSite/Blog : ' + perfilUsuario?.blog;
    var localidade: string = 'Localidade : ' + perfilUsuario?.location;
    var desde: string = 'Membro desde: ' + dayjs(perfilUsuario?.created_at).format('DD/MM/YYYY');
+   var linkPerfil: string = 'https://github.com/'+formData.usuario;
 
    return (
       <div >
          <div className="nav-bar">
-            <label className="nav-titulo"> Bootcamp DevSuperior</label>
+           <Link to="/" >
+             <label className="nav-titulo"> Bootcamp DevSuperior</label>
+           </Link>           
          </div>
 
          <form onSubmit={handleSubmit}>
@@ -81,10 +84,11 @@ const Search = () => {
                   type="text"
                   onChange={handleOnChange}
                />
-
+              
                <button className="btn-search">
                   Encontrar
                </button>
+              
             </div>
          </form>
 
@@ -98,7 +102,9 @@ const Search = () => {
                      <>
                         <div >
                            <img src={perfilUsuario?.avatar_url} alt="avatar" className="img" />
-                           <button className="btn-perfil"> Ver perfil</button>
+                           <a href= {linkPerfil}>
+                            <button className="btn-perfil" > Ver perfil</button>
+                          </a>
                         </div>
 
                         <div >

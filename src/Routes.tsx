@@ -14,6 +14,7 @@ const Routes = () => (
           <Route path="/search" exact>
               <Search />
           </Route>
+        
 
           
         </Switch>      
